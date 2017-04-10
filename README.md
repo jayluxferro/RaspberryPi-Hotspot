@@ -26,9 +26,9 @@ Run __install.sh__
 2. Remove "#" from the beginning of the line containing __net.ipv4.ip_foward=1__
 
 ## Creating nat routing rule using iptables
-1. Run "iptables_ipv4.sh"
-2. Save the iptables rule by running: sudo -c "iptables-save > /etc/iptables.ipv4.nat"
-3. Run "sudo nano /etc/rc.local"
+1. Run "__iptables_ipv4.sh__"
+2. Save the iptables rule by running: __sudo -c "iptables-save > /etc/iptables.ipv4.nat__"
+3. Run "__sudo nano /etc/rc.local__"
 4. Type the following line just before the "exit 0" line
      __iptables-restore < /etc/iptables.ipv4.nat__
 
