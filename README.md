@@ -7,6 +7,7 @@ Run __install.sh__
 1. Run __sudo nano /etc/network/interfaces__
 2. Clear the inital configuration for your wireless interface
 3. Paste the contents of "__wlanConfig__"
+4. Run "__sudo ifdown wlan0; sudo ifup wlan0__"
 
 ## Edit Hostapd configuration
 1. Run "__sudo nano /etc/hostapd/hostapd.conf__"
@@ -19,7 +20,7 @@ Run __install.sh__
 
 ## Create dnsmasq dhcp configuration file
 1. Run "__sudo nano /etc/dnsmasq.conf__"
-2. Replace all its contents with the contents of "dnsmasq.conf"
+2. Replace all its contents with the contents of "**dnsmasq.conf**"
 
 ## Enable ipv4 forwarding
 1. Run "__sudo nano /etc/sysctl.conf__"
