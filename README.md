@@ -1,21 +1,21 @@
 # Hotspot Configuration of a Raspberry-Pi
 
 ## Install required packages
-Run "install.sh" 
+Run __install.sh__
 
 ## Edit Network configuration file
-Run "sudo nano /etc/network/interfaces"
-Paste the contents of "wlanConfig"
-Remember to clear the inital configuration for your wireless interface
+1. Run __sudo nano /etc/network/interfaces__
+2. Clear the inital configuration for your wireless interface
+3. Paste the contents of "__wlanConfig__"
 
 ## Edit Hostapd configuration
-Run "sudo nano /etc/hostapd/hostapd.conf"
-Pase the contents of hostapd.conf
+1. Run "__sudo nano /etc/hostapd/hostapd.conf__"
+2. Paste the contents of hostapd.conf
 
 ## Add default configuration hostapd daemon file
-Run "sudo nano /etc/default/hostapd"
-Find the line __#DAEMON_CONF=""__
-Replace it with  DAEMON_CONF="/etc/hostapd/hostapd.conf"
+1. Run "__sudo nano /etc/default/hostapd__"
+2. Find the line __#DAEMON_CONF=""__
+3. Replace it with  __DAEMON_CONF="/etc/hostapd/hostapd.conf"__
 
 ## Create dnsmasq dhcp configuration file
 Run "sudo nano /etc/dnsmasq.conf"
