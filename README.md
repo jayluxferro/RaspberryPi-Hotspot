@@ -37,5 +37,3 @@ Run the following lines:
 sudo update-rc.d -f hostapd enable
 sudo update-rc.d -f dnsmasq enable
 sudo reboot
-
-# RaspberryPi-Hotspot
