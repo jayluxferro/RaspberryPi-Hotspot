@@ -28,7 +28,7 @@ Run __install.sh__
 
 ## Creating nat routing rule using iptables
 1. Run "__iptables_ipv4.sh__"
-2. Save the iptables rule by running: __sudo -c "iptables-save > /etc/iptables.ipv4.nat__"
+2. Save the iptables rule by running: __sudo sh -c "iptables-save > /etc/iptables.ipv4.nat__"
 3. Run "__sudo nano /etc/rc.local__"
 4. Type the following line just before the "exit 0" line
      __iptables-restore < /etc/iptables.ipv4.nat__
@@ -36,3 +36,5 @@ Run __install.sh__
 ## Starting services upon reboot
 Run the following line:
     __sudo update-rc.d -f hostapd enable &&  sudo update-rc.d -f dnsmasq enable &&  sudo reboot__
+
+Source: https://frillip.com/using-your-raspberry-pi-3-as-a-wifi-access-point-with-hostapd/
