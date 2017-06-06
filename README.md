@@ -3,6 +3,12 @@
 ## Install required packages
 Run __install.sh__
 
+## Deny wireless interface
+1. Run __sudo nano /etc/dhcpcd.conf__
+2. Paste __denyinterfaces wlan0__ at the bottom, where __wlan0__ is the wireless network interface
+3. Save by pressing __Ctrl + O__
+4. Exit by pressing __Ctrl + X__
+
 ## Edit Network configuration file
 1. Run __sudo nano /etc/network/interfaces__
 2. Clear the inital configuration for your wireless interface
